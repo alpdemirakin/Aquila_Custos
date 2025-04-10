@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gun Control Interface</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="arrow-sprite.css">
+</head>
+<body>
+    <div class="container">
+        <div class="control-panel">
+            <div class="mode-switch">
+                <label class="switch">
+                    <input type="checkbox" id="modeToggle">
+                    <span class="slider"></span>
+                </label>
+                <div class="mode-label">
+                    <span>Manual</span>
+                    <span>Auto</span>
+                </div>
+            </div>
+
+            <div class="direction-pad">
+                <div class="direction-row">
+                    <button class="direction-btn nw">NW</button>
+                    <button class="direction-btn n">N</button>
+                    <button class="direction-btn ne">NE</button>
+                </div>
+                <div class="direction-row">
+                    <button class="direction-btn w">W</button>
+                    <button class="direction-btn shoot">SHOOT</button>
+                    <button class="direction-btn e">E</button>
+                </div>
+                <div class="direction-row">
+                    <button class="direction-btn sw">SW</button>
+                    <button class="direction-btn s">S</button>
+                    <button class="direction-btn se">SE</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

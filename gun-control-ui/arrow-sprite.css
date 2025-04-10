@@ -1,0 +1,58 @@
+/* Arrow sprites for direction buttons */
+.direction-btn:not(.shoot) {
+    position: relative;
+}
+
+.direction-btn:not(.shoot)::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3E%3Cpath d='M12 2L4 12h16z'/%3E%3C/svg%3E");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    top: 50%;
+    left: 50%;
+    transform-origin: center;
+}
+
+/* North - default position (0 degrees) */
+.n::before {
+    transform: translate(-50%, -50%) rotate(0deg);
+}
+
+/* South - 180 degrees */
+.s::before {
+    transform: translate(-50%, -50%) rotate(180deg);
+}
+
+/* East - 90 degrees */
+.e::before {
+    transform: translate(-50%, -50%) rotate(90deg);
+}
+
+/* West - 270 degrees */
+.w::before {
+    transform: translate(-50%, -50%) rotate(270deg);
+}
+
+/* Northeast - 45 degrees */
+.ne::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+/* Northwest - 315 degrees */
+.nw::before {
+    transform: translate(-50%, -50%) rotate(315deg);
+}
+
+/* Southeast - 135 degrees */
+.se::before {
+    transform: translate(-50%, -50%) rotate(135deg);
+}
+
+/* Southwest - 225 degrees */
+.sw::before {
+    transform: translate(-50%, -50%) rotate(225deg);
+} 

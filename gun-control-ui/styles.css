@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a1a;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #2a2a2a;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+.control-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+}
+
+/* Switch styles */
+.mode-switch {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #444;
+    transition: .4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: .4s;
+    border-radius: 50%;
+}
+
+input:checked + .slider {
+    background-color: #ff3e3e;
+}
+
+input:checked + .slider:before {
+    transform: translateX(26px);
+}
+
+.mode-label {
+    color: white;
+    display: flex;
+    gap: 1rem;
+}
+
+/* Direction pad styles */
+.direction-pad {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.direction-row {
+    display: flex;
+    gap: 0.5rem;
+    justify-content: center;
+}
+
+.direction-btn {
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    background-color: #444;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: transparent;
+    position: relative;
+}
+
+.direction-btn:hover {
+    background-color: #555;
+    transform: scale(1.05);
+}
+
+.direction-btn:active {
+    background-color: #666;
+    transform: scale(0.95);
+}
+
+.shoot {
+    background-color: #ff3e3e;
+    width: 60px;
+    height: 60px;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1;
+    padding: 0;
+    color: white;
+}
+
+.shoot:hover {
+    background-color: #ff5555;
+}
+
+.shoot:active {
+    background-color: #ff0000;
+} 
